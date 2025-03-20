@@ -1,0 +1,41 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "Sitio Web Sistema Biblioteca",
+    "owner": "Programacion Segura",
+    "description": "Diagramas de flujo de datos para el modelado de amenazas en un sistema bibliotecario de la Universidad Veracruzana.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Juan David Carmona Ávila"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Flujo de Datos Sistema Completo Biblioteca",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.4.1",
+        "cells": [],
+        "description": "Diagrama de flujo de datos para sistema de biblioteca"
+      },
+      {
+        "id": 1,
+        "title": "Flujo de Datos Inicio Sesión Bilbioteca",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.4.1",
+        "cells": [],
+        "description": "Diagrama de flujo de datos en inicio de sesión para biblioteca"
+      }
+    ],
+    "diagramTop": 2,
+    "reviewer": "Guillermo Vera",
+    "threatTop": 0
+  }
+}
