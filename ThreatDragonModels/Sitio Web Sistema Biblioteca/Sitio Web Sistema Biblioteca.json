@@ -42,6 +42,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -125,7 +126,6 @@
               ]
             },
             "id": "279b0849-bae9-4ee2-8fc6-90281d0387ce",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Usuarios",
@@ -176,6 +176,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -259,7 +260,6 @@
               ]
             },
             "id": "8d820aa3-4137-4426-9b14-e4287c4c2fc2",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Bibliotecario",
@@ -310,6 +310,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -393,7 +394,6 @@
               ]
             },
             "id": "688708bc-01c2-46ae-8a57-5a01ec738cc0",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Sitio Web\nBiblioteca",
@@ -418,12 +418,25 @@
                   "new": false,
                   "number": 3,
                   "score": "14"
+                },
+                {
+                  "id": "1b662f0d-2bfc-4c51-8447-f07a7b8f6782",
+                  "title": "Repudio (Amenaza adicional)",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Si no se tienen registros en la realización de solicitud y préstamo de libros, los usuarios podrían realizar préstamos y evitar pagar multas dado que no hay registro de quién lo realizó.",
+                  "mitigation": "Registros en el servidor web que incluyan la id de los usuarios o alguna otra firma digital, además de marcas de tiempo.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": "5"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 0,
-                "repudiation": 0,
+                "repudiation": 2,
                 "informationDisclosure": 0,
                 "denialOfService": 2,
                 "elevationOfPrivilege": 0
@@ -456,6 +469,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -539,7 +553,6 @@
               ]
             },
             "id": "c19e1512-9281-483f-b69c-fc5a28b02fef",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "Base de datos",
@@ -586,15 +599,6 @@
                 "informationDisclosure": 4,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -623,6 +627,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -706,7 +711,6 @@
               ]
             },
             "id": "8c7d0d4f-d599-482f-a3a2-880872caaa07",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "Web Application Config",
@@ -766,6 +770,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -849,7 +854,6 @@
               ]
             },
             "id": "d495c76d-d300-47c0-842a-c0dba095e512",
-            "zIndex": 6,
             "data": {
               "type": "tm.Store",
               "name": "Páginas web en disco",
@@ -2745,6 +2749,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Guillermo Vera",
-    "threatTop": 26
+    "threatTop": 27
   }
 }
