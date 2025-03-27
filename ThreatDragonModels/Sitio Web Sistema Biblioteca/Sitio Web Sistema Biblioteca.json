@@ -1505,6 +1505,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -1588,7 +1589,6 @@
               ]
             },
             "id": "521445f4-03ea-4f76-813c-91d31f74b56f",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Usuarios",
@@ -1639,6 +1639,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -1722,7 +1723,6 @@
               ]
             },
             "id": "00e4224b-0e0d-4177-afef-534757f0ae15",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Controlador\nWeb",
@@ -1780,6 +1780,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -1863,7 +1864,6 @@
               ]
             },
             "id": "e0d65edf-0765-493c-af2e-191ef8580962",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Proceso\nde login",
@@ -1887,7 +1887,7 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 24,
-                  "score": ""
+                  "score": "10"
                 }
               ],
               "threatFrequency": {
@@ -1896,7 +1896,7 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 2
               }
             }
           },
@@ -1924,6 +1924,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -2007,7 +2008,6 @@
               ]
             },
             "id": "97d1831e-7118-43a7-975a-980507b7dafc",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "Páginas web\nen disco",
@@ -2069,6 +2069,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -2152,7 +2153,6 @@
               ]
             },
             "id": "92896c55-5533-41b5-9422-ea4903868f4f",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "Base de datos",
@@ -2199,13 +2199,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
